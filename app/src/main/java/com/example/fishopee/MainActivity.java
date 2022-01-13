@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Bundle bundle = getIntent().getExtras().getBundle("key");
-                String username1 = bundle.getString("name");
-                String userpassword1 = bundle.getString("password");
+                    Bundle bundle = getIntent().getExtras().getBundle("key");
+                    String username1 = bundle.getString("name");
+                    String userpassword1 = bundle.getString("password");
 
 
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if((username1.equals(userinput))&&(userpassword1.equals(passwordinput))){
-                    //     text.setText("登入成功");
+               //     text.setText("登入成功");
                     Toast toast =  Toast.makeText(MainActivity.this, "登入成功", Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);   //靠中下
                     toast.show();
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else {
-                    //       text.setText("帳號或密碼錯誤");
+             //       text.setText("帳號或密碼錯誤");
 
                     Toast toast1 =  Toast.makeText(MainActivity.this, "帳號或密碼錯誤", Toast.LENGTH_SHORT);
                     toast1.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);   //靠中下
